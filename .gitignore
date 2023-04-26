@@ -1,0 +1,5 @@
+*~
+*/hists_*.root
+job*.out
+job*.err
+condor.log

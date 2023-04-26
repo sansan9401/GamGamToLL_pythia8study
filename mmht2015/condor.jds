@@ -1,0 +1,35 @@
+executable=../main785
+output=job_$(ptype)_$(process).out
+error=job_$(ptype)_$(process).err
+log=condor.log
+jobbatchname=mmht2015
+getenv=true
+should_transfer_files=yes
+arguments=$(ptype) $(process)
+transfer_output_remaps = "hists.root = hists_$(ptype)_$(Process).root"
+
+ptype=0
+queue 1000
+
+ptype=1
+queue 1000
+
+ptype=2
+queue 1000
+
+ptype=3
+queue 1000
+
+ptype=4
+queue 1000
+
+ptype=5
+queue 1000
+
+ptype=6
+queue 1000
+
+ptype=7
+queue 1000
+
+

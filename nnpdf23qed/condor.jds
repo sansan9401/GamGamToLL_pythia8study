@@ -1,0 +1,21 @@
+executable=../main783
+output=job_$(arguments)_$(process).out
+error=job_$(arguments)_$(process).err
+log=condor.log
+jobbatchname=nnpdf23qed
+getenv=true
+should_transfer_files=yes
+transfer_output_remaps = "hists.root = hists_$(arguments)_$(Process).root"
+
+arguments=1
+queue 1000
+
+arguments=2
+queue 1000
+
+arguments=3
+queue 1000
+
+arguments=4
+queue 1000
+

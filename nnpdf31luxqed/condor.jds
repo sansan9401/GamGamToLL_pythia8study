@@ -1,0 +1,10 @@
+executable=../main782
+output=job$(process).out
+error=job$(process).err
+log=condor.log
+jobbatchname=nnpdf31luxqed
+getenv=true
+should_transfer_files=yes
+transfer_output_remaps = "hists.root = hists_$(Process).root"
+queue 1000
+

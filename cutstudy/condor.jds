@@ -1,0 +1,11 @@
+executable=../main780
+arguments=$(process)
+output=job$(process).out
+error=job$(process).err
+log=condor.log
+jobbatchname=cutstudy
+getenv=true
+should_transfer_files=yes
+transfer_output_remaps = "hists.root = hists_$(Process).root"
+queue 1000
+
